@@ -9,4 +9,17 @@
     [“Russia”, “Denmark”, “Kazan”] → []
 */
 
+
+string[] ArrayString() //Первый метод - для заполнения массива данными
+{
+    Console.WriteLine("Введите количество строк");
+    int num = Convert.ToInt32(Console.ReadLine());
+    string[] strArray = new string[num];
+    string str = String.Empty;
+
+    Console.WriteLine("Введите строку: ");
+    for (int i = 0; i < strArray.Length; i++) strArray[i] = Console.ReadLine()!;
+    return strArray;
+}
+ArrayString();
 Console.WriteLine();

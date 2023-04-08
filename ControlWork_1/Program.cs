@@ -21,5 +21,35 @@ string[] ArrayString() //Первый метод - для заполнения �
     for (int i = 0; i < strArray.Length; i++) strArray[i] = Console.ReadLine()!;
     return strArray;
 }
-ArrayString();
+
+void FindArray(string[] str) //Второй метод - проверяет значения в соответствии с условием и выводит результат
+{
+    int condition = 3;
+    int count = 0;
+    Console.Write("-> ");
+    for (int i = 0; i < str.Length; i++)
+    {
+        if (str[i].Length <= condition & str[i] != String.Empty) count++;
+    }
+    if (count > 0)
+    {
+        int numCond = 0;
+        string[] fndArr = new string[count];
+        for (int i = 0; i < str.Length; i++)
+        {
+            if (str[i].Length <= condition & str[i] != String.Empty)
+            {
+                fndArr[numCond] = str[i];
+                numCond++;
+            }
+        }
+        Console.Write("[");
+        Console.Write(String.Join(", ", fndArr));
+        Console.Write("]");
+    }
+    else Console.Write("Значений не найдено!");
+}
+
+string[] str = ArrayString();
 Console.WriteLine();
+FindArray(str);

@@ -47,7 +47,7 @@ void FindArray(string[] str) //Второй метод - проверяет зн
         Console.Write(String.Join(", ", fndArr));
         Console.Write("]");
     }
-    else Console.Write("Значений не найдено!");
+    else Console.Write("[]");
 }
 
 string[] str = ArrayString();

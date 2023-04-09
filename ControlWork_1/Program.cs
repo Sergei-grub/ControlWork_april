@@ -53,3 +53,5 @@ void FindArray(string[] str) //Второй метод - проверяет зн
 string[] str = ArrayString();
 Console.WriteLine();
 FindArray(str);
+
+//Выполнил ученик С.А. Грубов

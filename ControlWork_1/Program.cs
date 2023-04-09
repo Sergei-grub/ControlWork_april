@@ -43,9 +43,7 @@ void FindArray(string[] str) //Второй метод - проверяет зн
                 numCond++;
             }
         }
-        Console.Write("[");
-        Console.Write(String.Join(", ", fndArr));
-        Console.Write("]");
+        Console.Write($"[{String.Join(", ", fndArr)}]");  
     }
     else Console.Write("[]");
 }
